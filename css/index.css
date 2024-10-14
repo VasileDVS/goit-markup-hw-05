@@ -1,0 +1,714 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #2E2F42;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #2E2F42;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Logo Styling */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: none;
+    color: #2E2F42;
+}
+
+.logo span {
+    color: #4D5AE5;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/people-office1.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 2; 
+}
+
+/* Overlay Layer */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+}
+
+/* Centered Text and Button */
+.hero .container {
+    position: relative;
+    z-index: 3; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text styling */
+.hero h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF; 
+    max-width: 496px;
+    margin-bottom: 58px; 
+    z-index: 4; 
+}
+
+/* Buton styling */
+.hero button {
+    width: 169px; 
+    height: 56px; 
+    padding: 16px 32px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    z-index: 4; 
+}
+
+.hero button:hover {
+    background-color: #404BBF;
+}
+
+/* Social Media Icons */
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
+
+/* Section Spacing */
+.section {
+    padding: 60px 0;
+}
+
+/* Button Styles */
+button {
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #404BBF;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    border-bottom: 2px solid #E7E9FC;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 156px; 
+}
+
+header .logo {
+    margin-right: 75px; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 40px; 
+}
+
+nav ul li a {
+    color: #2E2F42;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #4D5AE5;
+    border-bottom: 2px solid #4D5AE5;
+}
+
+header .contacts {
+    display: flex;
+    gap: 35px; 
+    margin-left: 332px; 
+}
+
+header .contacts a {
+    color: #212121;
+    text-decoration: none;
+}
+
+header .contacts a:hover {
+    color: #404BBF;
+}
+
+/* Services Section */
+.services {
+    width: 1128px; 
+    height: 224px; 
+    padding: 60px 0;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.services dl {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.service-item {
+    background-color: #f9f9ff; 
+    padding: 20px;
+    border-radius: 5px;
+    width: 264px; 
+    height: 224px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+    width: 264px; 
+    height: 112px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Title for Service */
+.services dt {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px; 
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.02em; 
+    text-align: left; 
+    color: #2E2F42; 
+    margin-bottom: 10px;
+}
+
+/* Descriptive text for Service */
+.services dd {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    letter-spacing: 0.02em;
+    text-align: left; 
+    color: #434455;
+    margin: 0;
+}
+
+/* What Are We Doing Section */
+.what-we-are-doing {
+    width: 1128px;
+    height: 412px; 
+    margin: 120px auto 0 auto; 
+    text-align: center;
+}
+
+/* Section Title */
+.what-we-are-doing h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px; 
+    font-weight: 700; 
+    line-height: 40px; 
+    letter-spacing: 0.02em; 
+    text-align: center; 
+    color: #2E2F42; 
+    margin-bottom: 40px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+.image-item {
+    flex: 1;
+    max-width: 361px;
+    height: 300px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px; 
+}
+
+/* Our Team Section */
+.team-section {
+    padding: 120px 0;
+    background-color: #f4f4fd;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.team-section h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2E2F42;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    max-width: 250px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius:0;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2E2F42;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2E2F42;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 232px; 
+    height: 40px; 
+    margin: 0 auto;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Customers Section */
+.customers-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.customers-section h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2E2F42;
+    margin-bottom: 40px;
+}
+
+.customer-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.customer-logo img {
+    width: 168px;
+    height: 88px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Footer General Styles */
+footer {
+    background-color: #2E2F42;
+    width: 100%; /* Full width for the footer */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-container {
+    width: 1128px; /* Set content width to 1128px */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* First Box: Company Info */
+.company-info {
+    width: 264px;
+    height: 112px;
+}
+
+.company-info .footer-logo {
+    width: 115px;
+    height: 24px;
+    margin-bottom: 16px;
+}
+
+.company-info p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 264px;
+    height: 72px;
+    margin-top: 16px;
+}
+
+/* Second Box: Social Media */
+.social-media {
+    width: 208px;
+    height: 80px;
+}
+
+.social-media h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Third Box: Subscription Form */
+.subscribe-box {
+    width: 453px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-box h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.subscribe-box form {
+    display: flex;
+    gap: 16px;
+}
+
+.subscribe-box input[type="email"] {
+    width: 200px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-box input[type="email"]::placeholder {
+    color: #FFFFFF;
+}
+
+.subscribe-box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background-color: #4D5AE5;
+    color: white;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    gap: 16px;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+
+.subscribe-box button img {
+    width: 24px;
+    height: 24px;
+}
+
+.subscribe-box button:hover {
+    background-color: #404BBF;
+}
+
+
+
+/* Modal Backdrop and Popup Styling */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+
+/* Show the modal and backdrop when is-hidden is removed */
+.backdrop:not(.is-hidden) {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Popup specific styles */
+#popup {
+    width: 408px;
+    height: 584px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F, 0px 1px 2px 0px #00000033;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+/* Popup form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.labelContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputTextLabel {
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.labelContainer input {
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #8E8F99;
+    padding: 0 15px 0 38px;
+}
+
+.labelContainer textarea {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 8px 16px;
+    height: 120px;
+    width: 360px;
+    max-width: 360px;
+    max-height: 120px;
+    min-height: 120px;
+    min-width: 360px;
+}
+
+.inputSVG {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+}
+
+/* Checkbox and privacy label */
+label[for="inputPrivacy"] {
+    flex-direction: row;
+    align-items: center;
+}
+
+#inputPrivacy {
+    height: 16px;
+    width: 16px;
+}
+
+label[for="inputPrivacy"] .inputTextLabel {
+    margin: 0 0 0 10px;
+}
+
+/* Submit Button */
+.submitForm {
+    height: 56px;
+    width: 169px;
+    margin: auto;
+    background: #4D5AE5;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Close Button */
+#closePopup {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid #0000001A;
+    margin-left: auto;
+    display: block;
+}
+
+.popupTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+input:focus+.inputSVG svg path {
+    fill: #4D5AE5;
+}
+
+input:focus {
+    border-color: #4D5AE5;
+}
+
+label[for="commentTextarea"] .inputTextLabel {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.labelContainer:last-of-type {
+    margin-bottom: 24px;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid rgba(77, 90, 229, 1);
+}
+
